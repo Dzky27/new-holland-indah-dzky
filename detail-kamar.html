@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Kamar - New Holland Indah</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="New Holland Indah" class="logo-img">
+                <span>New Holland Indah</span>
+            </div>
+
+            <nav class="nav-links">
+                <a href="index.html#beranda">Beranda</a>
+                <a href="index.html#fasilitas">Fasilitas</a>
+                <a href="index.html#kamar">Kamar</a>
+                <a href="index.html#lokasi">Lokasi</a>
+                <a href="login.html" class="btn-nav">Masuk</a>
+            </nav>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+        <!-- Breadcrumb -->
+        <section class="section" style="padding-top: 120px; padding-bottom: 2rem;">
+            <div class="container">
+                <a href="index.html#kamar" class="breadcrumb-link">
+                    ← Kembali ke Daftar Kamar
+                </a>
+            </div>
+        </section>
+
+        <!-- Room Detail Section -->
+        <section class="section" style="padding-top: 1rem;">
+            <div class="container">
+                <div class="room-detail-grid">
+                    <!-- Room Images -->
+                    <div class="room-images">
+                        <div class="room-image-main">
+                            <img src="assets/interior.jpg" alt="Interior Kamar" class="main-room-photo">
+                        </div>
+
+                        <div class="room-image-thumbnails">
+                            <div class="thumbnail">
+                                <img src="assets/interior.jpg" alt="Interior" class="thumbnail-img">
+                            </div>
+                            <div class="thumbnail">
+                                <img src="assets/kamar-interior.jpg" alt="Kamar" class="thumbnail-img">
+                            </div>
+                            <div class="thumbnail">
+                                <img src="assets/kamar-mandi.jpeg" alt="Kamar Mandi" class="thumbnail-img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Room Info -->
+                    <div class="room-info">
+                        <div class="room-badge">Tersedia</div>
+
+                        <h1 class="room-detail-title">Kamar Kost New Holland Indah</h1>
+
+                        <div class="room-detail-price">
+                            Rp 500.000 <span>/ bulan</span>
+                        </div>
+
+                        <!-- Capacity Options -->
+                        <div class="capacity-options">
+                            <h3>Pilih Kapasitas</h3>
+                            <div class="capacity-grid">
+                                <label class="capacity-option active">
+                                    <input type="radio" name="capacity" value="1" checked>
+                                    <div class="capacity-label">1 Orang</div>
+                                    <div class="capacity-price">Rp 500.000</div>
+                                </label>
+                                <label class="capacity-option">
+                                    <input type="radio" name="capacity" value="2">
+                                    <div class="capacity-label">2 Orang</div>
+                                    <div class="capacity-price">Rp 700.000</div>
+                                    <div class="capacity-note">+ Kasur tambahan</div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Features -->
+                        <div class="room-detail-features">
+                            <h3>Fasilitas Kamar</h3>
+                            <div class="features-grid">
+                                <div class="feature-item">
+                                    <span class="feature-icon">🪑</span>
+                                    <span>Lemari Pakaian</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">⚡</span>
+                                    <span>Listrik Gratis Awal Masuk</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">💧</span>
+                                    <span>Air Gratis</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">🅿️</span>
+                                    <span>Parkir Gratis</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">🎓</span>
+                                    <span>Dekat Kampus</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">🌳</span>
+                                    <span>Lingkungan Nyaman</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Description -->
+                        <div class="room-description">
+                            <h3>Deskripsi</h3>
+                            <p>
+                                Kamar kost yang nyaman dan strategis, berlokasi hanya 5 menit dari Kampus 1 Universitas Kuningan. Dilengkapi dengan fasilitas lengkap termasuk lemari pakaian, listrik gratis awal masuk, air gratis, dan parkiran gratis. Lingkungan aman dan tenang, cocok
+                                untuk mahasiswa.
+                            </p>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="room-actions">
+                            <a href="register.html" class="btn-primary">
+                                Daftar Sekarang
+                            </a>
+                            <a href="https://wa.me/6289657769065" target="_blank" class="btn-secondary">
+                                💬 Hubungi via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>New Holland Indah</h3>
+                <p>Kost strategis dekat Kampus 1 Universitas Kuningan dengan fasilitas lengkap dan harga terjangkau.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Menu</h4>
+                <ul>
+                    <li><a href="index.html#beranda">Beranda</a></li>
+                    <li><a href="index.html#fasilitas">Fasilitas</a></li>
+                    <li><a href="index.html#kamar">Kamar</a></li>
+                    <li><a href="index.html#lokasi">Lokasi</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Akses</h4>
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Registrasi</a></li>
+                    <li><a href="lokasi.html">Lokasi Detail</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 New Holland Indah. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+    <script>
+        // Handle capacity radio buttons
+        const capacityOptions = document.querySelectorAll('.capacity-option');
+
+        capacityOptions.forEach(option => {
+            option.addEventListener('click', function() {
+                capacityOptions.forEach(opt => opt.classList.remove('active'));
+                this.classList.add('active');
+                const radio = this.querySelector('input[type="radio"]');
+                if (radio) radio.checked = true;
+            });
+        });
+    </script>
+</body>
+
+</html>

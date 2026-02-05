@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Penghuni - New Holland Indah</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <header class="sidebar-header">
+                <div class="sidebar-logo">
+                    <img src="../assets/logo.png" alt="New Holland Indah" class="logo-img">
+                    <span>New Holland Indah</span>
+                </div>
+            </header>
+
+            <nav class="sidebar-nav">
+                <ul class="sidebar-menu">
+                    <li>
+                        <a href="#" class="nav-item active">
+                            <span class="nav-icon">🏠</span>
+                            <span class="nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <footer class="sidebar-footer">
+                <div class="user-profile">
+                    <div class="user-avatar">ZV</div>
+                    <div class="user-info">
+                        <div class="user-name">ZaxVoldigoad</div>
+                        <div class="user-role">Kamar A-01</div>
+                    </div>
+                </div>
+                <a href="../login.html" class="nav-item logout-link">
+                    <span class="nav-icon">🚪</span>
+                    <span class="nav-text">Logout</span>
+                </a>
+            </footer>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="dashboard-content">
+            <header class="dashboard-header">
+                <div class="header-title">
+                    <h1>Dashboard</h1>
+                    <p>Selamat datang kembali, Zax!</p>
+                </div>
+                <div class="header-actions">
+                    <button class="icon-button" aria-label="Notifikasi">🔔</button>
+                    <button class="icon-button" aria-label="Profil">👤</button>
+                </div>
+            </header>
+
+            <main class="dashboard-main">
+                <!-- Stats Section -->
+                <section class="stats-section">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon-wrapper">
+                                <span class="stat-icon">🏠</span>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value">A-01</div>
+                                <div class="stat-label">Nomor Kamar</div>
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon-wrapper stat-icon-success">
+                                <span class="stat-icon">✓</span>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value">Lunas</div>
+                                <div class="stat-label">Status Pembayaran</div>
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon-wrapper stat-icon-info">
+                                <span class="stat-icon">💰</span>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value">Rp 500k</div>
+                                <div class="stat-label">Tagihan Bulan Ini</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Room Info & Payment Grid -->
+                <section class="content-grid">
+                    <!-- Room Info Card -->
+                    <div class="card">
+                        <h3 class="card-title">Informasi Kamar</h3>
+                        <div class="info-list">
+                            <div class="info-row">
+                                <span class="info-label">Nomor Kamar</span>
+                                <strong class="info-value">A-01</strong>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">Tipe Kamar</span>
+                                <strong class="info-value">Standard</strong>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">Kapasitas</span>
+                                <strong class="info-value">1 Orang</strong>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">Harga per Bulan</span>
+                                <strong class="info-value info-value-primary">Rp 500.000</strong>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">Tanggal Masuk</span>
+                                <strong class="info-value">1 Januari 2024</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Payment Status Card -->
+                    <div class="card payment-card">
+                        <h3 class="card-title">Tagihan Bulan Ini</h3>
+                        <div class="payment-content">
+                            <div class="payment-month">Januari 2025</div>
+                            <div class="payment-amount">Rp 500.000</div>
+                            <span class="badge badge-success">Lunas</span>
+                            <div class="payment-date">
+                                <div class="payment-date-label">Dibayar pada</div>
+                                <strong class="payment-date-value">15 Januari 2025</strong>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Announcements & Payment History Grid -->
+                <section class="content-grid-2col">
+                    <!-- Announcements Card -->
+                    <div class="card">
+                        <h3 class="card-title">Pengumuman Terbaru</h3>
+                        <div class="announcement-list">
+                            <article class="announcement-item announcement-info">
+                                <h4 class="announcement-title">Pemeliharaan Lift</h4>
+                                <p class="announcement-text">Lift akan dipelihara tanggal 20-21 Januari 2025</p>
+                                <time class="announcement-date">18 Jan 2025</time>
+                            </article>
+
+                            <article class="announcement-item announcement-success">
+                                <h4 class="announcement-title">Fasilitas Baru</h4>
+                                <p class="announcement-text">Ruang gym tersedia di lantai 1</p>
+                                <time class="announcement-date">10 Jan 2025</time>
+                            </article>
+                        </div>
+                    </div>
+
+                    <!-- Payment History Card -->
+                    <div class="card">
+                        <h3 class="card-title">Riwayat Pembayaran</h3>
+                        <div class="payment-history-list">
+                            <div class="payment-history-item">
+                                <div class="payment-history-info">
+                                    <div class="payment-history-month">Januari 2025</div>
+                                    <div class="payment-history-amount">Rp 500.000</div>
+                                </div>
+                                <span class="badge badge-success">Lunas</span>
+                            </div>
+
+                            <div class="payment-history-item">
+                                <div class="payment-history-info">
+                                    <div class="payment-history-month">Desember 2024</div>
+                                    <div class="payment-history-amount">Rp 500.000</div>
+                                </div>
+                                <span class="badge badge-success">Lunas</span>
+                            </div>
+
+                            <div class="payment-history-item">
+                                <div class="payment-history-info">
+                                    <div class="payment-history-month">November 2024</div>
+                                    <div class="payment-history-amount">Rp 500.000</div>
+                                </div>
+                                <span class="badge badge-success">Lunas</span>
+                            </div>
+
+                            <div class="payment-history-item">
+                                <div class="payment-history-info">
+                                    <div class="payment-history-month">Oktober 2024</div>
+                                    <div class="payment-history-amount">Rp 500.000</div>
+                                </div>
+                                <span class="badge badge-success">Lunas</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Pemilik - New Holland Indah</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <header class="sidebar-header">
+                <div class="sidebar-logo">
+                    <img src="../assets/logo.png" alt="New Holland Indah" class="logo-img">
+                    <span>New Holland Indah</span>
+                </div>
+            </header>
+
+            <nav class="sidebar-nav">
+                <ul class="sidebar-menu">
+                    <li>
+                        <a href="#" class="nav-item active">
+                            <span class="nav-icon">🏠</span>
+                            <span class="nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <footer class="sidebar-footer">
+                <div class="user-profile">
+                    <div class="user-avatar">PK</div>
+                    <div class="user-info">
+                        <div class="user-name">Pemilik Kost</div>
+                        <div class="user-role">Owner</div>
+                    </div>
+                </div>
+                <a href="../login.html" class="nav-item logout-link">
+                    <span class="nav-icon">🚪</span>
+                    <span class="nav-text">Logout</span>
+                </a>
+            </footer>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="dashboard-content">
+            <header class="dashboard-header">
+                <div class="header-title">
+                    <h1>Dashboard Pemilik</h1>
+                    <p>Laporan & Statistik (Read Only)</p>
+                </div>
+            </header>
+
+            <main class="dashboard-main">
+                <!-- Stats Section -->
+                <section class="stats-section">
+                    <div class="stats-grid stats-grid-4">
+                        <div class="stat-card">
+                            <div class="stat-icon-wrapper">
+                                <span class="stat-icon">🏠</span>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value">18</div>
+                                <div class="stat-label">Total Kamar</div>
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon-wrapper stat-icon-success">
+                                <span class="stat-icon">✓</span>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value">12</div>
+                                <div class="stat-label">Kamar Terisi (67%)</div>
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon-wrapper stat-icon-info">
+                                <span class="stat-icon">👥</span>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value">12</div>
+                                <div class="stat-label">Total Penghuni</div>
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon-wrapper stat-icon-warning">
+                                <span class="stat-icon">💰</span>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value">Rp 6jt</div>
+                                <div class="stat-label">Pemasukan Bulan Ini</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Revenue Chart -->
+                <section class="card">
+                    <h3 class="card-title">Grafik Pendapatan Tahun 2025</h3>
+                    <div class="chart-placeholder">
+                        📊 Grafik Pendapatan (Chart.js)
+                    </div>
+                </section>
+
+                <!-- Revenue Summary -->
+                <section class="card">
+                    <h3 class="card-title">Ringkasan Keuangan 2025</h3>
+                    <div class="revenue-grid">
+                        <div class="revenue-item">
+                            <div class="revenue-value revenue-success">Rp 72jt</div>
+                            <div class="revenue-label">Total Pemasukan</div>
+                        </div>
+
+                        <div class="revenue-item">
+                            <div class="revenue-value revenue-primary">Rp 6jt</div>
+                            <div class="revenue-label">Rata-rata/Bulan</div>
+                        </div>
+
+                        <div class="revenue-item">
+                            <div class="revenue-value revenue-info">Rp 7.2jt</div>
+                            <div class="revenue-label">Tertinggi</div>
+                            <div class="revenue-note">Maret 2025</div>
+                        </div>
+
+                        <div class="revenue-item">
+                            <div class="revenue-value">Rp 5jt</div>
+                            <div class="revenue-label">Terendah</div>
+                            <div class="revenue-note">Januari 2025</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Monthly Report Table -->
+                <section class="card">
+                    <h3 class="card-title">Laporan Bulanan</h3>
+                    <div class="table-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Bulan</th>
+                                    <th>Kamar Terisi</th>
+                                    <th>Okupansi</th>
+                                    <th>Pemasukan</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Januari 2025</strong></td>
+                                    <td>10</td>
+                                    <td>56%</td>
+                                    <td><strong class="text-success">Rp 5.000.000</strong></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Februari 2025</strong></td>
+                                    <td>11</td>
+                                    <td>61%</td>
+                                    <td><strong class="text-success">Rp 6.000.000</strong></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Maret 2025</strong></td>
+                                    <td>13</td>
+                                    <td>72%</td>
+                                    <td><strong class="text-success">Rp 7.200.000</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

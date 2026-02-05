@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin - New Holland Indah</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <header class="sidebar-header">
+                <div class="sidebar-logo">
+                    <img src="../assets/logo.png" alt="New Holland Indah" class="logo-img">
+                    <span>New Holland Indah</span>
+                </div>
+            </header>
+
+            <nav class="sidebar-nav">
+                <ul class="sidebar-menu">
+                    <li>
+                        <a href="#" class="nav-item active">
+                            <span class="nav-icon">🏠</span>
+                            <span class="nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <footer class="sidebar-footer">
+                <div class="user-profile">
+                    <div class="user-avatar">AD</div>
+                    <div class="user-info">
+                        <div class="user-name">ZaxAdmin</div>
+                        <div class="user-role">Administrator</div>
+                    </div>
+                </div>
+                <a href="../login.html" class="nav-item logout-link">
+                    <span class="nav-icon">🚪</span>
+                    <span class="nav-text">Logout</span>
+                </a>
+            </footer>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="dashboard-content">
+            <header class="dashboard-header">
+                <div class="header-title">
+                    <h1>Dashboard Admin</h1>
+                    <p>Kelola data kost New Holland Indah</p>
+                </div>
+                <div class="header-actions">
+                    <button class="btn-primary">+ Tambah Data</button>
+                </div>
+            </header>
+
+            <main class="dashboard-main">
+                <!-- Stats Section -->
+                <section class="stats-section">
+                    <div class="stats-grid stats-grid-4">
+                        <div class="stat-card">
+                            <div class="stat-icon-wrapper">
+                                <span class="stat-icon">🏠</span>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value">18</div>
+                                <div class="stat-label">Total Kamar</div>
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon-wrapper stat-icon-success">
+                                <span class="stat-icon">✓</span>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value">12</div>
+                                <div class="stat-label">Kamar Terisi (67%)</div>
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon-wrapper stat-icon-info">
+                                <span class="stat-icon">👥</span>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value">12</div>
+                                <div class="stat-label">Penghuni Aktif</div>
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon-wrapper stat-icon-warning">
+                                <span class="stat-icon">💰</span>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value">Rp 6jt</div>
+                                <div class="stat-label">Pemasukan Bulan Ini</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Recent Tenants Table -->
+                <section class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Data Penghuni Terbaru</h3>
+                        <button class="btn-secondary">Lihat Semua</button>
+                    </div>
+
+                    <div class="table-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Nama</th>
+                                    <th>Kamar</th>
+                                    <th>No. HP</th>
+                                    <th>Tanggal Masuk</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>ZaxVoldigoad</strong></td>
+                                    <td>A-01</td>
+                                    <td>089657769065</td>
+                                    <td>1 Jan 2024</td>
+                                    <td><span class="badge badge-success">Aktif</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Siti Permata</strong></td>
+                                    <td>B-01</td>
+                                    <td>082345678901</td>
+                                    <td>15 Feb 2024</td>
+                                    <td><span class="badge badge-success">Aktif</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Denis Saputra</strong></td>
+                                    <td>A-02</td>
+                                    <td>083456789012</td>
+                                    <td>10 Mar 2024</td>
+                                    <td><span class="badge badge-success">Aktif</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- Recent Payments Table -->
+                <section class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Pembayaran Terbaru</h3>
+                        <button class="btn-secondary">Lihat Semua</button>
+                    </div>
+
+                    <div class="table-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Nama Penghuni</th>
+                                    <th>Kamar</th>
+                                    <th>Bulan</th>
+                                    <th>Jumlah</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ZaxVoldigoad</td>
+                                    <td>A-01</td>
+                                    <td>Januari 2025</td>
+                                    <td>Rp 500.000</td>
+                                    <td><span class="badge badge-success">Lunas</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Siti Permata</td>
+                                    <td>B-01</td>
+                                    <td>April 2025</td>
+                                    <td>Rp 700.000</td>
+                                    <td><span class="badge badge-success">Lunas</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Denis Saputra</td>
+                                    <td>A-02</td>
+                                    <td>Januari 2025</td>
+                                    <td>Rp 500.000</td>
+                                    <td><span class="badge badge-warning">Pending</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
